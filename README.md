@@ -1,57 +1,69 @@
 <div align="center">
 
-# 📺🔥 KrawallTV
+# 📺🔥 KRAWALLTV 🔥📺
+### 💥 DEIN FERNSEHEN. DEINE REGELN. PURE ESKALATION. 💥
 
-### Dein Fernsehen. Deine Regeln.
+**⚡ LIVE-TV • 🎬 FILME • 🍿 SERIEN • 📅 EPG • 🔥 FIRE TV**
 
-**Live-TV · Filme · Serien · EPG · Fire TV**
+Eine dunkle, schnelle IPTV-Player-App aus der **KrawallWerk**-Werkstatt. 🧡🖤
 
-Ein unabhängiger IPTV-Player aus der **KrawallWerk**-Werkstatt. 🧡
-
-**Wichtig:** KrawallTV bietet selbst **keine** Sender, Filme, Playlists, IPTV-Zugänge oder Abonnements an. Du benötigst einen eigenen, rechtmäßig nutzbaren Xtream-Zugang.
+**KrawallTV liefert selbst keine Sender, Filme, Playlists oder Abonnements.** Du benötigst einen eigenen, rechtmäßig nutzbaren IPTV-Zugang.
 
 </div>
 
 ---
 
-## 📦 Download
+## 🚀 KrawallTV v0.3.0-beta.1
 
-**Aktuelle Version: v0.3.0-beta.1 (Fire TV)**
+| 🚦 Plattform | 🛠️ Technik | 🎯 Stand |
+| --- | --- | --- |
+| 🔥 **Amazon Fire TV** | Kotlin · Jetpack Compose · Media3 | **0.3.0-beta.1** · Public Beta |
+| 🪟 **Windows** | Electron | 0.1.0 Preview · Noch nicht Teil dieser Beta |
+| 🍎 **macOS** | Electron | 0.1.0 Preview · Noch nicht Teil dieser Beta |
 
-➡️ [Zu den offiziellen Downloads und Versionen](https://github.com/hotteftw1981/KrawallTV/releases)
+> 🧪 **Beta-Version:** Die App ist zum Testen gedacht. Nicht alle Streaming-Formate und Anbieterdaten funktionieren auf jedem Fire-TV-Gerät.
 
-_Die APK wird hier als GitHub-Release-Asset bereitgestellt. Ist noch kein Asset vorhanden, steht der öffentliche Download noch aus._
+## 📦 Download & Installation
 
-## ✨ Funktionen
+➡️ **[Offizielle KrawallTV-Releases](https://github.com/hotteftw1981/KrawallTV/releases)**
 
-- Live-TV mit Senderübersicht, Kategorien und Fernbedienungs-Navigation
-- Kategorie-Filter in den Einstellungen, einschließlich **„Nur DE“**, dauerhaft gespeichert
-- Sendersuche auch über ausgeblendete Kategorien hinweg
-- Eigene Senderlisten und zuletzt gesehene Sender
-- TV-Programm / EPG, soweit vom Anbieter unterstützt
-- Filme und Serien mit Staffel- und Episodenauswahl
-- Bildformat, Tonspuren und Untertitel, sofern vom Stream angeboten
-- Dunkle, für Fernseher entwickelte Benutzeroberfläche
+Die Fire-TV-APK wird dort als Release-Asset bereitgestellt. Falls noch kein APK-Asset angezeigt wird, ist der öffentliche Download noch nicht verfügbar.
 
-## 🔥 Installation auf Fire TV
+1. Die APK aus den offiziellen Releases herunterladen.
+2. Die Installation über den ausgewählten Übertragungsweg am Fire TV erlauben.
+3. APK installieren und KrawallTV starten.
+4. Deinen eigenen Xtream-Zugang eingeben.
 
-1. APK aus den [Releases](https://github.com/hotteftw1981/KrawallTV/releases) laden.
-2. Die Installation über den gewählten Dateiübertragungsweg auf dem Fire TV erlauben.
-3. APK installieren und KrawallTV öffnen.
-4. Eigenen Xtream-Zugang eingeben.
+**🔄 Update:** Neue Version möglichst **über die vorhandene Installation** installieren. Vorherige Installation nicht ungeprüft löschen, da dabei Einstellungen und Zugangsdaten verloren gehen können.
 
-**Updates:** Eine neue APK möglichst direkt über die bestehende Installation installieren. Nicht ohne Grund deinstallieren, sonst können gespeicherte Einstellungen und Anmeldedaten verloren gehen.
+## 🔥 Die Fire-TV-Features
 
-## 🧪 Beta-Hinweise
+- 📡 **Xtream-Anmeldung:** Eigener IPTV-Zugang, lokal verschlüsselte Zugangsdaten
+- 📺 **Live-TV:** Senderübersicht, Kategorien, Suche und schnelles Umschalten
+- 🎮 **Fire-TV-Fernbedienung:** Navigation und Senderliste über laufendem Video
+- 🇩🇪 **Nur DE:** Deutsche Senderkategorien direkt filtern und über Neustarts gespeichert behalten
+- 🔎 **Globale Sendersuche:** Findet auch Sender aus ausgeblendeten Kategorien
+- 🗂️ **Eigene Listen:** Sender nach persönlichen Vorlieben organisieren
+- 📅 **EPG:** Laufende und folgende Sendung, soweit vom Anbieter unterstützt
+- 🧡 **Dark Cinema:** Dunkle Oberfläche, orange Akzente und eigene KrawallTV-Optik
+- 🎬 **Filme & Serien:** Kataloge, Poster, Details und Wiedergabe mit Staffeln/Episoden
+- 🍿 **Neue Inhalte:** Anbieter-Neuheiten für Filme und Serien entdecken
+- 🎧 **Player-Optionen:** Bildformat, Tonspuren und Untertitel, soweit verfügbar
 
-Dies ist eine Vorabversion. Die Verfügbarkeit von Programmdaten, Streams, Tonspuren und Untertiteln hängt vom jeweiligen Anbieter ab. Nicht alle Videoformate funktionieren auf jedem Gerät. **Windows und macOS gehören noch nicht zu dieser Fire-TV-Beta.**
+### 🍿 Filme und Serien
 
-## 🐛 Probleme melden
+Die großen **FILME**- und **SERIEN**-Kacheln öffnen den Xtream-Katalog. Die Neuheiten auf der Startseite bleiben bewusst eine kompakte Vorschau. Serien bieten eine eigene Staffel- und Episodenauswahl.
 
-[GitHub Issues öffnen](https://github.com/hotteftw1981/KrawallTV/issues)
+### 🧩 TV-Programm und EPG
 
-Bitte KrawallTV-Version, Fire-TV-Modell, Fire-OS-Version und Schritte zum Nachstellen angeben. **Keine Passwörter, Tokens, vollständigen Stream-URLs oder personenbezogenen Daten posten.**
+Der EPG zeigt echte Programmdaten der verbundenen Quelle an. Fehlende Informationen werden nicht durch erfundene Sendungen ersetzt. Auch zusätzliche XMLTV-Quellen können verwendet werden.
 
----
+## 🐛 Feedback und Fehler melden
 
-<sub>KrawallTV ist nicht mit Amazon oder IPTV-Anbietern verbunden. Nutzung nur mit eigenen, rechtmäßig nutzbaren Quellen.</sub>
+➡️ [**KrawallTV Issues**](https://github.com/hotteftw1981/KrawallTV/issues)
+
+Bitte App-Version, Fire-TV-Modell, Fire-OS-Version und die Schritte zum Nachstellen nennen. **Keine Passwörter, Tokens, vollständigen IPTV-/EPG-URLs oder personenbezogenen Daten veröffentlichen.**
+
+## 🧡 Über KrawallTV
+
+KrawallTV ist ein unabhängiger IPTV-Player aus dem KrawallWerk-Ökosystem. Er stellt keine eigenen Sender, Filme, Serien oder Abonnements bereit und steht in keiner Verbindung zu Amazon oder IPTV-Anbietern. Bitte ausschließlich eigene, rechtmäßig nutzbare Quellen verwenden.
