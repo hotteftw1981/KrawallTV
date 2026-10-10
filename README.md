@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="krawalltv_wordmark.webp" alt="KrawallTV Logo" width="440">
+
 # 📺🔥 KRAWALLTV 🔥📺
 ### 💥 DEIN FERNSEHEN. DEINE REGELN. PURE ESKALATION. 💥
 
