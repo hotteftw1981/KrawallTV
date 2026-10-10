@@ -1,0 +1,41 @@
+name: Update Beta Checksums
+on:
+  push:
+    paths:
+      - '.github/workflows/update-beta-checksums.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  checksums:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify assets and publish checksums
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="v0.3.0-beta.1"
+          gh release view "$TAG" >/dev/null
+          python3 - <<'PY'
+          import json, subprocess
+          tag = "v0.3.0-beta.1"
+          repo = "hotteftw1981/KrawallTV"
+          data = json.loads(subprocess.check_output(["gh","api",f"repos/{repo}/releases/tags/{tag}"],text=True))
+          targets = ["KrawallTV-v0.3.0-beta.1-FireTV.apk","KrawallTV.Setup.0.1.0.exe","KrawallTV-0.1.0-arm64.dmg"]
+          assets = {a["name"]: a for a in data["assets"]}
+          rows = []
+          for name in targets:
+              asset = assets[name]
+              digest = asset.get("digest", "")
+              if not digest.startswith("sha256:") or len(digest) != 71:
+                  raise RuntimeError(f"Missing SHA-256 digest: {name}")
+              rows.append(digest[7:]+"  "+name)
+          with open("SHA256SUMS.txt","w",encoding="ascii") as out:
+              out.write("\n".join(rows)+"\n")
+          print("\n".join(rows))
+          PY
+          gh release upload "$TAG" SHA256SUMS.txt --clobber
+          gh release view "$TAG" --json assets --jq '.assets[].name'
